@@ -148,7 +148,7 @@ public class BackpackCounter {
 
 	public static void main(String[] args) {
 
-		File file = new File("/Users/mayte/Documents/GitHub/adventofcode_2022/03_Java_RucksackReorganization/resources/backpack.txt");
+		File file = new File("/Users/mayte/GitHub/adventofcode_2022/03_Java_RucksackReorganization/resources/backpack.txt");
 		LinkedList<String> rucksackInhalt = ReadInRucksack(file);	
 		LinkedList<ArrayList<String>> dividedCompartments = divideRucksackCompartments(rucksackInhalt);
 		int sumCompartments = findLetterInCompartments(dividedCompartments);
