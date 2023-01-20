@@ -58,17 +58,12 @@ public class CampCleanup {
 			int end_two = elves.get(3);
 			
 			// compare values:
-			if (start_one == start_two) {
-				++count;
-				double_area=true;
-			}
-			
-			else if ((start_one < start_two) && (end_one >= end_two)) {
+			if ((start_one <= start_two) && (end_one >= end_two)) {
 					++count;
 					double_area=true;
-					//continue;
+					continue; // to avoid counting those pairs twice where start and end of both sections are the same
 			}
-			else if ((start_two < start_one) && (end_two >= end_one) )  {
+			if ((start_two <= start_one) && (end_two >= end_one) )  {
 					++count;
 					double_area=true;
 			}
@@ -79,10 +74,11 @@ public class CampCleanup {
 //				System.out.println(elves);
 //			}
 			}
-		//System.out.println(count);
 		return count;
 
 		}
+	
+	
 	public static int CompareAreaOverlap(LinkedList<ArrayList<Integer>> elfpairs) {
 		int count = 0;
 		for (ArrayList<Integer> elves : elfpairs) {
@@ -91,9 +87,12 @@ public class CampCleanup {
 			int end_one = elves.get(1);
 			int start_two = elves.get(2);
 			int end_two = elves.get(3);
-			
+			// no overlap when we either have the first section and then the second section 
+			// (i.e. first sections starts and ends before the second section starts)
+			// or the other way around (i.e. second section starts and ends before the first section starts)
+			// overlap if this condition is not fulfilled
 			if  (!(((start_one < start_two) && (end_one<start_two)) | ((start_two < start_one) && (end_two < start_one)))) {
-				System.out.println(elves);
+//				System.out.println(elves);
 				++count;
 			}
 		}
