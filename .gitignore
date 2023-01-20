@@ -24,3 +24,14 @@ adventofcode_03/.settings/org.eclipse.core.resources.prefs
 04_Java_CampCleanup/.settings/org.eclipse.jdt.core.prefs
 .metadata/version.ini
 .metadata/.plugins/org.eclipse.core.resources/0.snap
+.DS_Store
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+*.ini
+.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
+.metadata/.plugins/org.eclipse.core.resources/0.snap
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
